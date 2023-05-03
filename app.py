@@ -57,7 +57,7 @@ if uploaded_file is not None:
     # Getting all the unique user names from the chat list
     user_list = data['user'].unique().tolist()
 
-    # Removing the unwanter group_notification message which are generated when we create a group
+    # Removing the unwanted group_notification message which are generated when we create a group
     # user_list.remove('group_notification')
     
     # Sorting the users based on the names initial
@@ -558,3 +558,13 @@ if uploaded_file is not None:
             except:
                 # Disply error image
                 st.image('error.webp')
+
+        st.write("##")
+        st.write("##")
+        st.write("##")
+        st.write("##")
+        st.write("##")
+
+        st.title("Percentage Rates :- ")
+        st.write("##")
+        st.title(sentiments.polarity_scores("it is not like that he is really bad"))
